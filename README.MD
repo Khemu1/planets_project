@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kepler Data Project</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; background-color: #f4f4f4; }
-        h1, h2 { color: #333; }
-        code { background: #eee; padding: 3px 5px; border-radius: 3px; }
-        pre { background: #eee; padding: 10px; border-radius: 5px; overflow-x: auto; }
-    </style>
-</head>
 <body>
     <h1>Kepler Data Project</h1>
     <p>This project loads and filters exoplanet data from the Kepler space telescope to find potentially habitable planets.</p>
@@ -55,5 +42,6 @@
     total planets that meet the condition: 10
     planets: [ 'Kepler-22b', 'Kepler-442b', 'Kepler-452b' ]
     </pre>
+
 </body>
 </html>
