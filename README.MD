@@ -1,43 +1,51 @@
-    <h1>Kepler Data Project</h1>
-    <p>This project loads and filters exoplanet data from the Kepler space telescope to find potentially habitable planets.</p>
+Kepler Data Project
+===================
 
-    <h2>Features</h2>
-    <ul>
-        <li>Reads Kepler exoplanet data from a CSV file</li>
-        <li>Filters planets based on habitability criteria</li>
-        <li>Uses Node.js streams for efficient file processing</li>
-    </ul>
+This project loads and filters exoplanet data from the Kepler space telescope to find potentially habitable planets.
 
-    <h2>Installation</h2>
-    <pre><code>npm install</code></pre>
+Features
+--------
 
-    <h2>Usage</h2>
-    <pre><code>node index.js</code></pre>
+*   Reads Kepler exoplanet data from a CSV file
+*   Filters planets based on habitability criteria
+*   Uses Node.js streams for efficient file processing
 
-    <h2>Project Structure</h2>
-    <pre>
+Installation
+------------
+
+    npm install
+
+Usage
+-----
+
+    node index.js
+
+Project Structure
+-----------------
+
     /project-folder
     ├── data/
-    │   ├── kepler_data.csv
+    │   ├── kepler\_data.csv
     ├── utils/
     │   ├── index.mjs
     ├── index.mjs
     ├── package.json
     ├── README.html
-    </pre>
+    
 
-    <h2>Filtering Criteria</h2>
-    <p>The project filters planets using the following conditions:</p>
-    <ul>
-        <li><code>koi_disposition</code> must be <code>CONFIRMED</code></li>
-        <li><code>koi_insol</code> (stellar flux) must be between <code>0.36</code> and <code>1.11</code></li>
-        <li><code>koi_prad</code> (planetary radius) must be less than <code>1.6</code></li>
-    </ul>
+Filtering Criteria
+------------------
 
-    <h2>Example Output</h2>
-    <pre>
+The project filters planets using the following conditions:
+
+*   `koi_disposition` must be `CONFIRMED`
+*   `koi_insol` (stellar flux) must be between `0.36` and `1.11`
+*   `koi_prad` (planetary radius) must be less than `1.6`
+
+Example Output
+--------------
+
     File loaded successfully
     parsing is done
     total planets that meet the condition: 10
-    planets: [ 'Kepler-22b', 'Kepler-442b', 'Kepler-452b' ]
-    </pre>
+    planets: \[ 'Kepler-22b', 'Kepler-442b', 'Kepler-452b' \]
